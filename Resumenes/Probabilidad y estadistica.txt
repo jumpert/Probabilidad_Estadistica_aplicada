@@ -1,0 +1,89 @@
+Probabilidad
+	Probabilidad y estadistica, son dististas pero apuntan a un mismo problema.
+	Incertidumbre por la aleatoriedad. Ej. Tirar dado
+	
+	Se podria introducir las variables, de tirar una moneda, pero implica calculos demaciado complejos.
+	Modelo determinista, porque logra predecir el futuro.
+	para calcular la lluvia no se podria utilizar porque es demaciado complejos.
+	
+	Cuando no es posible recurrir a un modelo determinista, utilizaremos un modelo probabilistico.
+	Hacer estadistica es hacer un experimento muchas veces y tener resultados.
+	
+Interpretacion de la probabilidad
+	Tiramos moneda, eventos de tirar medidos en 0 y 1. 
+	Def. imagenemos que repetimos un experimento aleatorio muchas veces (N).
+	supongamos que queremos estudiar el resultado.
+	Def. la frecuencia de Xo en la muestra es la cantidad de veces que salio Xo 
+	Def. la frecuencia relativa del resultadoXo es la frecuencia de Xo dividido N.
+	Ej. si tiramos una moneda 1000 veces y sale 495 caras.
+	=> frecuencia de caras 495 y frecuecia relativa 0.495. 
+	
+	
+La LEY DE LOS GRANDES NUMEROS
+	El limite de la Frecuencia Relativa cuando N tiende a infinito es la probabilidad teórica
+	Te permite predecir un evento pero no que este suceda.
+	
+	Credibilidad de un evento, 5 de oro lo gane 2 veces seguidas.
+	Es poco creible, cuando la probabilidad es muy poca o nula.
+	Eventos muy creibles, cuando la probabilidad se acerca a 1
+	
+Componentes:
+	una probabilidad esta relacionado con un experimento aleatorio.
+	Dependiendo del experimento pueden tener caracteristicas vectorial. Ej. tirar 2 monedas.
+	
+	Teoria de los conjuntos: conjunto de elementos, teorema de Ben, producto cartesiano.
+	El producto cartesiano, forma duplas de elementos. A=(a,b,c) y B=(1,2)
+	AxB= a1, a2, b1, b2, c1, c2
+	
+Conjunto de los resultados posibles
+	 Lo vamos a llamar, espacio muestral del experimento.
+	 El conjunto podria ser Infinito
+	 
+Una probabilidad debe poder calcular la probabilidad de calcular ante cualquier conjunto de elementos.
+Un Evento es cualquier subconjunto del espacio muestral.
+
+Eventos excluyentes o incompatibles.
+	Eventos donde los resultados no tienen cosas en comun, su interseccion es vacia.
+	
+Probabilidades del dado:
+	La suma de todos los resultados debe dar igual a 1
+	P(1) + P(2) + P(3) + P(4) + P(5) + P(6) = 1
+	
+Propiedades Basicas de la Probabilidad
+
+Problema del Cumpleaños
+	Fechas del mismo dia
+	Hallar la probabilidad de que en un conjunto de m personas, al menos 2 de ellas tengan el mismo dia de cumpleaños.
+	Calcularemos la probabilidad del complemento. La probabilidad de que las m personas tengan cumpleaños distintos.
+	Omega = {(X1,X2,X3...Xm): 1<= Xi<= 365 , Xi pertenece a Naturales}
+	
+	Solucion:
+	1- ( 365! / 365^m x (365 - m)!)
+	
+	
+Problema de Monty Hall
+	Presentador y concursante, problema de las 3 puertas y el auto.
+	Proyecto, funcion en python que diga si gana o pierde.
+	Funcion de entrada recibe 0 o 1, decision si se cambia o no. 
+	1) leer la consigna del Juego
+	2) Escribir una funcion en python que simule el juego
+		la funcion debe recibir como parametro un booleano que vale 0 (se queda con su puerta) y si vale 1 (se cambia de puerta)
+		libreria random, randint
+		hacer la funcion con una salida para simularlo varias veces.
+	3) ejecutar la funcion anterior 1000 veces.
+		Calcular la frecuencia relativa del evento "el participante gano el auto"
+		Una para cada estrategia "el participante no gano"
+		Guardarlo en una lista para saber si gano o no.
+	4) concluir si alguna de las estrategias es preferible.
+	
+	
+
+Probabilidad Condicional
+	¿Cómo cambian las probabilidades cuando se tiene
+	información parcial sobre el resultado del experimento
+	aleatorio?
+	Sabemos que la probabilidad trabaja sobre experimentos en
+	los cuales no podemos predecir el resultado, pero si nos dan
+	cierta información sobre el resultado del experimento,
+	deberíamos cambiar nuestra asignación de probabilidades.
+	
